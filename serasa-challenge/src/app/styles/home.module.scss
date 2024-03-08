@@ -8,12 +8,9 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: var(--xs)) {
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-}
-
-@media (prefers-color-scheme: dark) {
+@media (min-width: (--xs)) and (max-width: var(--md)) {
 }

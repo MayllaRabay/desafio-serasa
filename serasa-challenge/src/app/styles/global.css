@@ -4,14 +4,138 @@
   margin: 0;
 }
 
+:root {
+  --light-solid: #FFFFFF;
+  --light-high: rgba(255, 255, 255, 0.80);
+
+  --dark-low: rgba(0, 0, 0, 0.44);
+  --dark-medium: rgba(0, 0, 0, 0.60);
+  --dark-high: rgba(0, 0, 0, 0.80);
+
+  --magenta: #E63888;
+
+  /*Max for Phones*/
+  --xs: 576px;
+
+  /*Max for Tablets*/
+  --sm: 768px;
+
+  /*Max for Laptops*/
+  --md: 992px;
+
+  /*Max for Desktops, above are Large Desktops*/
+  --lg: 1200px;
+}
+
 html,
 body {
   max-width: 100vw;
-  min-height: 100vh;
-  height: fit-content;
+  min-height: fit-content;
+  height: 100vh;
   overflow-x: hidden;
+}
+
+body {
+  background-color: var(--light-high);
+  color: var(--dark-high);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+/*Display*/
+h1 {
+  font-size: 3rem;
+  letter-spacing: -1.2;
+  line-height: 52px;
+}
+
+/*Heading L*/
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -1;
+  line-height: 44px;
+}
+
+/*Heading M*/
+h3 {
+  font-size: 2rem;
+  letter-spacing: -0.8;
+  line-height: 36px;
+}
+
+/*Heading S*/
+h4 {
+  font-size: 1.5rem;
+  letter-spacing: -0.6;
+  line-height: 28px;
+}
+
+/*Heading SX*/
+h5 {
+  font-size: 1.5rem;
+  line-height: 24px;
+}
+
+/*Subheading*/
+h6 {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+/*Body M*/
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
 }
 
 button {
   cursor: pointer;
+}
+
+@media (max-width: var(--sm)) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--dark-low);
+    color: var(--light-solid);
+  }
 }
