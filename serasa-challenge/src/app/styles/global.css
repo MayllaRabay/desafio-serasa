@@ -14,6 +14,8 @@
 
   --magenta: #E63888;
 
+  --error: #EF5350;
+
   /*Max for Phones*/
   --xs: 576px;
 
@@ -102,7 +104,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: var(--sm)) {
+@media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
     line-height: 44px;
