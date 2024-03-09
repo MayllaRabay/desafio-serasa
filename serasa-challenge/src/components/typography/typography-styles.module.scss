@@ -1,0 +1,109 @@
+.display,
+.headingL,
+.headingM,
+.headingS,
+.headingXS,
+.subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.display {
+  font-size: 3rem;
+  letter-spacing: -1.2px;
+  line-height: 52px;
+}
+
+.headingL {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  line-height: 44px;
+}
+
+.headingM {
+  font-size: 2rem;
+  letter-spacing: -0.8px;
+  line-height: 36px;
+}
+
+.headingS {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  line-height: 28px;
+}
+
+.headingXS {
+  font-size: 1.5rem;
+  line-height: 24px;
+}
+
+.subheading {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.bodyM {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.LightSolid {
+  color: var(--light-solid);
+}
+
+.LightHigh {
+  color: var(--light-high);
+}
+
+.DarkLow {
+  color: var(--dark-low);
+}
+
+.DarkMedium {
+  color: var(--dark-medium);
+}
+
+.DarkHigh {
+  color: var(--dark-high);
+}
+
+.Magenta {
+  color: var(--magenta);
+}
+
+@media (max-width: var(--sm)) {
+  .display {
+    font-size: 2.5rem;
+    line-height: 44px;
+  }
+
+  .headingL {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  .headingM {
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+
+  .headingS {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+
+  .headingXS {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+}
