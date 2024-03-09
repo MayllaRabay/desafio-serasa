@@ -49,12 +49,31 @@
   line-height: 24px;
 }
 
+.bodyS {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
 .regular {
   font-weight: 400;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.start {
+  text-align: start;
+}
+
+.center {
+  text-align: center;
+}
+
+.end {
+  text-align: end;
 }
 
 .LightSolid {
@@ -81,7 +100,11 @@
   color: var(--magenta);
 }
 
-@media (max-width: var(--sm)) {
+.Error {
+  color: var(--error);
+}
+
+@media (max-width: 768px) {
   .display {
     font-size: 2.5rem;
     line-height: 44px;

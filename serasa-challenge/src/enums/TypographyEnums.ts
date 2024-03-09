@@ -1,3 +1,9 @@
+export enum TypographyAlignment {
+  Start = "start",
+  Center = "center",
+  End = "end",
+}
+
 export enum TypographyColor {
   LightSolid = "LightSolid",
   LightHigh = "LightHigh",
@@ -5,6 +11,7 @@ export enum TypographyColor {
   DarkMedium = "DarkMedium",
   DarkHigh = "DarkHigh",
   Magenta = "Magenta",
+  Error = "Error",
 }
 
 export enum TypographyVariant {
@@ -15,6 +22,7 @@ export enum TypographyVariant {
   HeadingXS = "headingXS",
   Subheading = "subheading",
   BodyM = "bodyM",
+  BodyS = "bodyS",
 }
 
 export enum TypographyWeight {
