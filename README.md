@@ -35,7 +35,7 @@ Design em **/exercises/1-EXERCISE/materiais** e **/exercises/2-EXERCISE/materiai
 $ git clone https://github.com/MayllaRabay/desafio-serasa.git
 
 # Acesse a pasta do projeto
-$ cd desafio-serasa
+$ cd desafio-serasa/serasa-challenge
 
 # Baixe todas as dependências e pacotes da aplicação
 $ npm install
