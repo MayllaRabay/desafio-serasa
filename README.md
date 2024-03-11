@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Create, innovate, inspire, code and test like a girl!" title="Banner" src="./src/app/presentation/assets/images/banner.png" />
+  <img alt="Create, innovate, inspire, code and test like a girl!" title="Banner" src="./serasa-challenge/public/banner.png" />
 </h1>
 
 <h2 align="center"> 
