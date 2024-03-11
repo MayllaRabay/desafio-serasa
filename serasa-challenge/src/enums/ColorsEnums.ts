@@ -6,4 +6,5 @@ export enum Colors {
   DarkHigh = "var(--dark-high)",
   Magenta = "var(--magenta)",
   Error = "var(--error)",
+  Yellow = "var(--yellow)",
 }
