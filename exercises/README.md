@@ -25,7 +25,7 @@ Bora começar com o [primeiro exercício](1-EXERCISE/README.md)?
 
 Ao finalizar o teste, avise seu recrutador e ele irá marcar uma conversa técnica, onde apresentará os exercícios resolvidos, além de conversar sobre suas experiências. Lembrando que você deve enviar o link do seu repositório por e-mail.
 
-Além disso, se tiver projetos ou artigos publicados, coloque no markdown [delivery](DELIVERY.md), isso pode contar pontos na sua avaliação.
+Além disso, se tiver projetos ou artigos publicados, coloque no markdown [delivery](../DELIVERY.md), isso pode contar pontos na sua avaliação.
 
 ### Hora de programar
 
