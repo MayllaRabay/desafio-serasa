@@ -95,6 +95,8 @@ const EvaluationForm: React.FC = () => {
             name="rating"
             value={formData.rating}
             onChange={handleOnChange}
+            aria-label="Marque de 1 a 5 estrelas"
+            aria-required="true"
           >
             <option value={1}>1 estrela</option>
             <option value={2}>2 estrelas</option>
@@ -116,6 +118,8 @@ const EvaluationForm: React.FC = () => {
             value={formData.name}
             onChange={handleOnChange}
             data-style={formErrors.name && "error"}
+            aria-label="Seu nome"
+            aria-required="true"
           />
           {formErrors.name && (
             <div className={styles.formErrors}>
@@ -142,6 +146,7 @@ const EvaluationForm: React.FC = () => {
             value={formData.message}
             onChange={handleOnChange}
             maxLength={300}
+            aria-label="Deixe seu comentário (opcional)"
           />
         </div>
 
