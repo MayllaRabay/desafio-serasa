@@ -1,6 +1,6 @@
 "use client";
 
-import { LoadingBlur, Toast, Typography } from "@/components";
+import { IconStar, LoadingBlur, Toast, Typography } from "@/components";
 import {
   TypographyAlignment,
   TypographyColor,
@@ -22,12 +22,24 @@ const EvaluationForm: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isToastVisible, setIsToastVisible] = useState(false);
 
+  const ratingValues = [1, 2, 3, 4, 5];
+
   const validateFormData = (data: any) => {
     const errors: { [key: string]: string } = {};
     if (!data.name.trim()) {
       errors.name = "Campo obrigatório";
     }
     return errors;
+  };
+
+  const handleOnRatingChange = (rating: number) => {
+    setFormData({ ...formData, rating: rating });
+  };
+
+  const handleStarKeyDown = (e: any, rating: number) => {
+    if (e.key === "Enter" || e.key === " ") {
+      setFormData({ ...formData, rating: rating });
+    }
   };
 
   const handleOnChange = (
@@ -90,20 +102,22 @@ const EvaluationForm: React.FC = () => {
               Marque de 1 a 5 estrelas
             </Typography>
           </label>
-          <select
-            id="rating"
-            name="rating"
-            value={formData.rating}
-            onChange={handleOnChange}
-            aria-label="Marque de 1 a 5 estrelas"
-            aria-required="true"
-          >
-            <option value={1}>1 estrela</option>
-            <option value={2}>2 estrelas</option>
-            <option value={3}>3 estrelas</option>
-            <option value={4}>4 estrelas</option>
-            <option value={5}>5 estrelas</option>
-          </select>
+          <div className={styles.starRating}>
+            {ratingValues.map((value) => (
+              <IconStar
+                key={value}
+                tabIndex={0}
+                size={38}
+                backgroundColor={
+                  formData.rating && value <= formData.rating
+                    ? "var(--yellow)"
+                    : "none"
+                }
+                onClick={() => handleOnRatingChange(value)}
+                onKeyDown={(e) => handleStarKeyDown(e, value)}
+              />
+            ))}
+          </div>
         </div>
 
         <div className={styles.formFields}>

@@ -26,6 +26,16 @@
     margin: 0.5rem 0;
     width: 100%;
 
+    .starRating {
+      cursor: pointer;
+      svg {
+        &:focus {
+          outline: 2px solid var(--dark-low);
+          border-color: var(--dark-low);
+        }
+      }
+    }
+
     label {
       margin-bottom: 0.5rem;
       width: 100%;
@@ -146,6 +156,15 @@
         &:focus {
           outline: 1px solid var(--light-high);
           border-color: var(--light-high);
+        }
+      }
+
+      .starRating {
+        svg {
+          &:focus {
+            outline: 2px solid var(--light-high);
+            border-color: var(--light-high);
+          }
         }
       }
     }
