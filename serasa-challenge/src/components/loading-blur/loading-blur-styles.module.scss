@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+
+  &[data-status="isLoading"] {
+    .children {
+      filter: blur(4px);
+      backdrop-filter: blur(4px); //Chrome e Opera
+    }
+    .loadingText {
+      display: flex;
+    }
+  }
+
+  .loadingText {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
